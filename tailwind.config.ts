@@ -52,16 +52,25 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				// VPN-specific color tokens
+				'vpn-connected': 'hsl(var(--vpn-connected))',
+				'vpn-connecting': 'hsl(var(--vpn-connecting))',
+				'vpn-disconnected': 'hsl(var(--vpn-disconnected))',
+				'premium-gold': 'hsl(var(--premium-gold))'
+			},
+			backgroundImage: {
+				'vpn-gradient': 'var(--vpn-gradient-primary)',
+				'vpn-dark': 'var(--vpn-gradient-dark)',
+				'vpn-card': 'var(--vpn-gradient-card)',
+				'premium-gradient': 'var(--premium-gradient)'
+			},
+			boxShadow: {
+				'vpn-glow': 'var(--vpn-glow-primary)',
+				'accent-glow': 'var(--vpn-glow-accent)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
+				'bounce': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
